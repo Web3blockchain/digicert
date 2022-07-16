@@ -4,6 +4,7 @@ import React,{
 
 import {
     NavBarWrapper,
+    NavBarContent,
     LogoWrapper,
     OptionButtonWrapper,
     OptionButton,
@@ -27,10 +28,12 @@ const NavBar = () => {
     return (
         <Fragment>
             <NavBarWrapper>
-                <LogoWrapper>CAE</LogoWrapper>
-                <OptionButtonWrapper>
-                    {getOptionButton(options)}
-                </OptionButtonWrapper>
+                <NavBarContent>
+                    <LogoWrapper><p>CAE</p></LogoWrapper>
+                    <OptionButtonWrapper>
+                        {getOptionButton(options)}
+                    </OptionButtonWrapper>
+                </NavBarContent>
             </NavBarWrapper>
         </Fragment>
     )
