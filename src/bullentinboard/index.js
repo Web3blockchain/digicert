@@ -1,7 +1,10 @@
 import React,{
     Fragment,
-    useState,
 } from "react";
+
+import { 
+    annouceContent,
+} from "./data";
 
 import {
     Wrapper,
@@ -13,10 +16,24 @@ import {
     RecentAnnounceDate,
     NewDate,
     NewContent,
+    ButtonWrapper,
+    NextButton,
+    PrevButton,
 } from './style';
 
 
 const BulletionBoard = () => {
+
+    const getAnnounceContent = (items) => {
+        return (
+            items.map((item)=>(
+                <RecentAnounce>
+                    <RecentAnnounceDate><p>{item.date}</p></RecentAnnounceDate>
+                        <p>{item.text}</p>
+                </RecentAnounce>
+            ))
+        );
+    }
 
     return (
         <Fragment>
@@ -24,26 +41,11 @@ const BulletionBoard = () => {
                 <ContentWrapper>
                     <RecentAnnounceWrapper>
                         <RecentAnnounceTitle><p>最新公告 / News</p></RecentAnnounceTitle>
-                        <RecentAnounce>
-                            <RecentAnnounceDate><p>5/13</p></RecentAnnounceDate>
-                            <p>今天是五月十三號。宜剪髮。</p>
-                        </RecentAnounce>
-                        <RecentAnounce>
-                            <RecentAnnounceDate><p>5/14</p></RecentAnnounceDate>
-                            <p>今天是五月十四號。忌收成。</p>
-                        </RecentAnounce>
-                        <RecentAnounce>
-                            <RecentAnnounceDate><p>5/15</p></RecentAnnounceDate>
-                            <p>今天是五月十五號。宜嫁娶。</p>
-                        </RecentAnounce>
-                        <RecentAnounce>
-                            <RecentAnnounceDate><p>5/16</p></RecentAnnounceDate>
-                            <p>今天是五月十六號。忌沐浴。</p>
-                        </RecentAnounce>
-                        <RecentAnounce>
-                            <RecentAnnounceDate><p>5/17</p></RecentAnnounceDate>
-                            <p>今天是五月十七號。宜開業。</p>
-                        </RecentAnounce>
+                            {getAnnounceContent(annouceContent)}
+                        <ButtonWrapper>
+                            <PrevButton>Prev</PrevButton>
+                            <NextButton>Next</NextButton>
+                        </ButtonWrapper>
                     </RecentAnnounceWrapper>
                     <NewAnnounceWrapper>
                         <div className="Container">

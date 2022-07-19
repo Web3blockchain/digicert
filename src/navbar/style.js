@@ -24,8 +24,9 @@ export const LogoWrapper = styled.div`
     background-color: #FFFFFF;
     box-sizing: border-box;
     margin-left: .5rem;
+    margin-top: 0.4rem;
     border-radius: 20px;
-    height: 100%;
+    height: 80%;
     width: 80px;
     float: left;
     font-size: 32px;
@@ -54,8 +55,12 @@ export const OptionButtonWrapper = styled.div`
 export const OptionButton = styled.button`
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: .7rem;
+
+    padding-top: .3rem;
     
     text-decoration: none;
+    text-align: center;
     list-style: none;
     font-size: 1.2rem;
     background-color: #FFFFFF;
@@ -65,7 +70,7 @@ export const OptionButton = styled.button`
     float: right;
     position: relative;
 
-    height: 100%;
+    height: 60%;
     width: 100px;
 
     transition: .5s;
@@ -76,6 +81,6 @@ export const OptionButton = styled.button`
         background-color: #000080;
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
-        box-shadow: 3px 3px 0.5px 0.5px #000000;
+        box-shadow: 3px 3px 0.5px 0.5px #000080;
     }
 `

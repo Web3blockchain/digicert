@@ -9,19 +9,28 @@ import {
     SearchBox,
     TextArea,
     ResultWrapper,
+    ResultCard,
 } from './style';
 
 const VerifyPage = () => {
+
+
     return (
         <Fragment>
             <Wrapper>
                 <ContentWrapper>
                     <div className="Container">
                     <SearchBoxWrapper>
-                        <SearchBox className = "A"/>
-                        <TextArea className="B"/>
+                        <SearchBox />
+                        <TextArea />
                     </SearchBoxWrapper>
-                    <ResultWrapper />
+                    <ResultWrapper>
+                        <p>Scroll And See</p>
+                        <ResultCard />
+                        <ResultCard />
+                        <ResultCard />
+                        <ResultCard />
+                    </ResultWrapper>
                     </div>
                 </ContentWrapper>
             </Wrapper>

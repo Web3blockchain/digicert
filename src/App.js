@@ -4,6 +4,7 @@ import FrontPage from "./frontpage";
 import BulletionBoard from "./bullentinboard";
 import VerifyPage from "./verifypage";
 import AboutPage from "./aboutpage";
+import MintPage from "./mintpage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <FrontPage />
       <BulletionBoard />
+      <MintPage />
       <VerifyPage />
       <AboutPage />
     </Fragment>

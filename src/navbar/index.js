@@ -29,7 +29,9 @@ const NavBar = () => {
         <Fragment>
             <NavBarWrapper>
                 <NavBarContent>
-                    <LogoWrapper><p>CAE</p></LogoWrapper>
+                    <LogoWrapper>
+                        <p>CAE</p>
+                    </LogoWrapper>
                     <OptionButtonWrapper>
                         {getOptionButton(options)}
                     </OptionButtonWrapper>

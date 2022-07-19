@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const config = {
+    backgroundColor: '#FFFFFF',
+    fontFamily: 'Microsoft JhengHei',
+    fontColor: '#000000',
+}
+
+const TypingAnimation = keyframes`
+    from {width: 0;}
+    to {width: 100%;}
+`
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -9,6 +20,7 @@ export const Wrapper = styled.div`
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: black;
+    background-color: ${config.backgroundColor};
 `
 
 export const ContentWrapper = styled.div`
@@ -16,20 +28,27 @@ export const ContentWrapper = styled.div`
     height: 70%;
     > p.Time {
         font-size: 40px;
-        color: black;
+        color: ${config.fontColor};
         padding: 10px 10px 10px 10px;
-        font-family: Microsoft JhengHei;
+        font-family: ${config.fontFamily};
     }
     > p.Name {
-        font-size: 70px;
-        color: black;
+        background-color: #FFFFF;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-space: .15em;
+        animation: ${TypingAnimation} 3s steps(25,end) forwards;
+        
+        font-size: 72px;
+        color: ${config.fontColor};
         padding: 20px 20px 20px 10px;
-        font-family: Microsoft JhengHei;
+        font-family: ${config.fontFamily};
     }
     > p.Status {
         font-size: 25px;
         text-align: center;
-        font-family: Microsoft JhengHei;
+        font-family: ${config.fontFamily};
     }
 `
 
@@ -57,7 +76,7 @@ export const ConnectWalletButton = styled.button`
         font-size: 22px;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        font-family: 'Dosis', sans-serif;
+        font-family: ${config.fontFamily};
     }
 
     &:hover {
@@ -65,8 +84,7 @@ export const ConnectWalletButton = styled.button`
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
+        
     }
-
-    
   
 `
