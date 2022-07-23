@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import NavBar from "./navbar";
 import FrontPage from "./frontpage";
-import BulletionBoard from "./bullentinboard";
+import BulletionBoard from "./bulletinboard";
 import VerifyPage from "./verifypage";
-import AboutPage from "./aboutpage";
+import ProbSol from "./probsol";
 import MintPage from "./mintpage";
+import AboutPage from "./aboutpage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BulletionBoard />
       <MintPage />
       <VerifyPage />
+      <ProbSol />
       <AboutPage />
     </Fragment>
   );

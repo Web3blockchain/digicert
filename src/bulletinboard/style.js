@@ -1,16 +1,14 @@
 import styled from "styled-components";
-
+import Post from '../img/background/post.png';
+import Icon from '../img/icon/flag.png';
 
 export const Wrapper = styled.div`
     width: 100%;
     height: 640px;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: black;
 `
 
 export const ContentWrapper = styled.div`
@@ -23,32 +21,41 @@ export const ContentWrapper = styled.div`
 export const RecentAnnounceWrapper = styled.div`
     width: 60%;
     height: 100%;
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     overflow: auto;
+    background-color: #F1F1F2;
+    margin-right: 1rem;
 `
 
 export const RecentAnnounceTitle = styled.div`
     width: 100%;
     height: 20%;
-    background-color: #FFFFFF;
+    background-color: #A0D7D5;
     box-sizing: border-box;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     > p {
-        background-color: #FFFFFF;
+        width: 70%;
+        text-align: center;
         font-size: 34px;
         font-family: Microsoft JhengHei;
+    }
+    > div.icon {
+        background-image: url(${Icon});
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 8%;
+        height: 90%;
     }
 `
 
 export const RecentAnounce = styled.div`
     width: 100%;
     height: 40px;
-    background-color: #FFFFFF;
     box-sizing: border-box;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -63,20 +70,31 @@ export const RecentAnounce = styled.div`
         font-size: 20px;
         font-family: Microsoft JhengHei;
     }
-
+    &.odd {
+        background-color: #F1F1F2;
+    }
+    &.even {
+        background-color: #FFFFFF;
+    }
 `
 
 export const RecentAnnounceDate = styled.div`
     width:25%;
     height: 100%;
-    background-color: #FFFFFF;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    > p {
+    > p.odd {
+        background-color: #F1F1F2;
         text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        font-family: Microsoft JhengHei;
+    }
+    > p.even {
         background-color: #FFFFFF;
+        text-align: center;
         font-size: 24px;
         font-weight: 900;
         font-family: Microsoft JhengHei;
@@ -85,11 +103,12 @@ export const RecentAnnounceDate = styled.div`
 `
 
 export const NewAnnounceWrapper = styled.div`
-    width: 40%;
+    background-image: url(${Post});
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32.6%;
     height: 100%;
-    background-color: #FFFFFF;
     box-sizing: border-box;
-    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -110,9 +129,7 @@ export const NewAnnounceWrapper = styled.div`
 export const NewDate = styled.div`
     width: 100%;
     height: 15%;
-    background-color: #FFFFFF;
     box-sizing: border-box;
-    border-bottom: 2px solid black;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -130,13 +147,12 @@ export const NewContent = styled.div`
     margin-left: 5px;
     margin-right: 5px;
     padding-top: 5px;
-    background-color: #FFFFF;
     font-family: Microsoft JhengHei;
 `
 
 export const ButtonWrapper = styled.div`
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     height: 10%;
     display: flex;
     justify-content: space-around;
@@ -149,15 +165,22 @@ export const NextButton = styled.button`
     box-sizing: border-box;
     border-radius: 20px;
     border: 1px solid black;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     //box-shadow: 1px 1px .3px .3px #000000;
     transition: .3s;
     &:hover {
-        background-color: #000080;
+        background-color: #4F9994;
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
-        
+    }
+    &.hidden {
+        opacity: 0%;
+    }
+    &.visible {
+        border: 1px solid black;
+        opacity: 100%;
+        bacground-color: green;
     }
 `
 
@@ -166,15 +189,21 @@ export const PrevButton = styled.button`
     height: 80%;
     box-sizing: border-box;
     border-radius: 20px;
-    border: 1px solid black;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     //box-shadow: .8px .8px .2px px #000000;
     transition: .3s;
     &:hover {
-        background-color: #000080;
+        background-color: #4F9994;
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
-        
+    }
+    &.hidden {
+        opacity: 0%;
+    }
+    &.visible {
+        border: 1px solid black;
+        opacity: 100%;
+        bacground-color: green;
     }
 `

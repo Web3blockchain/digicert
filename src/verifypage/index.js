@@ -25,7 +25,8 @@ const VerifyPage = () => {
                         <TextArea />
                     </SearchBoxWrapper>
                     <ResultWrapper>
-                        <p>Scroll And See</p>
+                        <ResultCard />
+                        <ResultCard />
                         <ResultCard />
                         <ResultCard />
                         <ResultCard />

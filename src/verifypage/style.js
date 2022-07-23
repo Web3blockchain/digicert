@@ -4,19 +4,16 @@ import SearchLogo from '../img/search.png';
 export const Wrapper = styled.div`
     width: 100%;
     height: 640px;
-    background-color: #FFFFFF;
+    background-color: #A0D7D5;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: black;
 `
 
 export const ContentWrapper = styled.div`
-    width: 70%;
-    height: 60%;
-    background-color: #FFFFFF;
+    width: 90%;
+    height: 70%;
+    background-color: #A0D7D5;
     display: flex;
     justify-content: center;
     > div.Container {
@@ -29,8 +26,8 @@ export const ContentWrapper = styled.div`
 
 export const SearchBoxWrapper = styled.div`
     width: 100%;
-    height: 15%;
-    background-color: #FFFFFF;
+    height: 12%;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     transition: 1.5s;
     display: flex;
@@ -42,23 +39,23 @@ export const SearchBoxWrapper = styled.div`
     margin-bottom: 5px;
 `
 export const SearchBox = styled.div`
-    width: 6%;
+    width: 4%;
     height: 60%;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     transition: .3s;
     background-image: url(${SearchLogo});
     background-size: contain;
     background-repeat: no-repeat;
     &:hover {
-        transform: scale(1.03, 1.03);
+        transform: scale(1.1, 1.1);
         color: #FFFFFF;
     }
 `
 export const TextArea = styled.textarea`
-    width: 91%;
+    width: 93%;
     height: 100%;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
     border-left: 0px;
     border-top: 0px;
     border-bottom: 0px;
@@ -70,18 +67,22 @@ export const TextArea = styled.textarea`
     box-sizing: border-box;
     font-size: 45px;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Microsoft JhengHei';
+    &:hover {
+        overflow-x: auto;
+    }
 `
 export const ResultWrapper = styled.div`
     width: 100%;
     height: 83%;
     overflow: auto;
     white-space: nowrap;
-    background-color: #FFFFFF;
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
     > p {
         margin-left: 5px;
         font-size: 30px;
@@ -91,13 +92,13 @@ export const ResultWrapper = styled.div`
 `
 
 export const ResultCard = styled.div`
-    background-color: #FFFFFF;
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    width: 89%;
-    height: 90%;
+    width: 48%;
+    height: 75%;
     box-sizing: border-box;
     border-radius: 20px;
+    background-color: #F1F1F2;
     border: 2px solid black;
 `

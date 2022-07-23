@@ -1,8 +1,17 @@
 import styled from "styled-components";
-import InstagramLogo from '../img/instagram.png';
-import Background_1 from '../img/background_1.png';
-import PrevLogo from '../img/angle-left.png';
-import NextLogo from '../img/angle-right.png';
+import InstagramLogo from '../img/social/instagram.png'
+import FacebookLogo from '../img/social/facebook.png';
+import GlobeLogo from '../img/social/globe.png';
+import DiscordLogo from '../img/social/discord.png';
+import TwitterLogo from '../img/social/twitter.png';
+import YoutubeLogo from '../img/social/youtube.png';
+import TelegramLogo from '../img/social/telegram.png';
+import LineLogo from '../img/social/line.png'
+import Background_1 from '../img/background/background_1.png';
+import Background_2 from '../img/background/background_2.png';
+import Background_3 from '../img/background/background_3.png';
+import PrevLogo from '../img/btn-left.png';
+import NextLogo from '../img/btn-right.png';
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -10,10 +19,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: black;
-    background-color: #FFFFFF;
+    background-color: #F1F1F2;
 `
 
 export const ContentWrapper  = styled.div`
@@ -21,19 +27,27 @@ export const ContentWrapper  = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     box-sizing: border-box;
+    background-color: #F1F1F2;
 `
 
 export const DisplayWrapper = styled.div`
-    width: 99%;
-    height: 60%;
-    margin-left: .35rem;
-    margin-top: .5rem;
-    background-image: url(${Background_1});
-    bacground-size: contain;
-    background-repear: norepeat;
+    width: 100%;
+    height: 78%;
+    transition: 1s;
+    &.internProgram {
+        background-image: url(${Background_1});
+    }
+    &.alumniAssociation {
+        background-image: url(${Background_2});
+    }
+    &.undergratesProject {
+        background-image: url(${Background_3})
+    }
+    bacground-size: cover;
+    background-repear: no-repeat;
     box-sizing: border-box;
-    border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -53,59 +67,106 @@ export const CentralContainer = styled.div`
     height:  100%;
     display: flex;
     flex-direction: column;
-    > div.top {
-        width: 100%;
-        height: 80%;
+`
+
+export const DotWrapper = styled.div`
+    width: 100%;
+    height: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
-    > div.bottom {
-        width: 100%;
+`
+
+export const Dot = styled.div`
+    width: 20%;
+    height: 10%;
+    background-color: white;
+    opacity: 50%;
+    &.black {
+        opacity: 100%;
         height: 20%;
     }
 `
 
-export const NextButton = styled.div`
-    width: 45%;
-    height: 15%;
+export const TopContainer = styled.div`
+    width: 100%;
+    height: 80%;
+    > p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        font-family: Microsoft JhengHei;
+        text-align: center;
+        color: white;
+    }
+    > div {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+`
+export const YearSelect = styled.select`
+    width: 20%;
+    height: 60%;
+    background-color: transparent;
     box-sizing: border-box;
-    border-radius: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    > option {
+        text-align: center;
+        font-size: 16px;
+        color: #000000;
+    }
+`
+
+export const NextButton = styled.div`
+    width: 40%;
+    height: 10%;
+    box-sizing: border-box;
     background-image: url(${NextLogo});
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 10%;
-    transition: .3s;
+    transition: .1s;
+    opacity: 50%;
     &:hover {
-        opacity: 50%;
-        background-color: #FFFFFF;
-        border: 2px solid black;
+        opacity: 100%;
         transform: scale(1.03, 1.03);
-        box-shadow: 3px 3px 0.5px 0.5px #000000;
     }
 `
 export const PrevButton = styled.div`
-    width: 45%;
-    height: 15%;
+    width: 40%;
+    height: 10%;
     box-sizing: border-box;
-    border-radius: 30px;
-    border-radius: 20px;
     background-image: url(${PrevLogo});
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 10%;
-    transition: .3s;
+    opacity: 50%;
+    transition: .1s;
     &:hover {
-        opacity: 50%;
-        background-color: #FFFFFF;
-        border: 2px solid black;
+        opacity: 100%;
         transform: scale(1.03, 1.03);
-        box-shadow: 3px 3px 0.5px 0.5px #000000;
     }
 `
 
-
 export const ButtonWrapper = styled.div`
+    transition: 2s;
     width: 100%;
-    height: 13%;
-    background-color: #FFFFFF;
+    height: 22%;
+    text-decoration: none;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -120,9 +181,9 @@ export const GalleryWrapper = styled.div`
     box-sizing: border-box;
 `
 
-export const MediaButtonWrapper = styled.div`
+export const MediaButton = styled.a`
     width: 16%;
-    height: 65%;
+    height: 40%;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 20px;
@@ -131,31 +192,71 @@ export const MediaButtonWrapper = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 0 0 0;
-    > div {
-        background-image: url(${InstagramLogo});
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: #FFFFFF;
-        width: 30%;
-        height: 50%;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+    transition: .3s;
+    text-decoration: none;
+    background-color: #4F9994;
+    &:hover {
+        background-color: #304C4D;
+        transform: scale(1.03, 1.03);
+        box-shadow: 3px 3px 0.5px 0.5px #000000;
+        > p { color: #F1F1F2; }
     }
     > p {
         text-align: center;
-        background-color: #FFFFFF;
         padding-top: .1rem;
         width: 55%;
         height: 51%;
         font-size: 24px;
+        color: #000000;
         font-family: 'Microsoft JhengHei';
         margin: 0 0 0 0;
-        
     }
 `
 
-export const MintButton = styled.div`
+export const SocialIcon = styled.div`
+    &.website {
+        background-image: url(${GlobeLogo});
+    }
+    &.instagram {
+        background-image: url(${InstagramLogo});
+    }
+    &.facebook {
+        background-image: url(${FacebookLogo});
+    }
+    &.discord {
+        background-image: url(${DiscordLogo});
+    }
+    &.youtube {
+        background-image: url(${YoutubeLogo});
+    }
+    &.twitter {
+        background-image: url(${TwitterLogo});
+    }
+    &.telegram {
+        background-image: url(${TelegramLogo});
+    }
+    &.line {
+        background-image: url(${LineLogo});
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 50%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+`
+
+export const MintButtonContainer = styled.div`
     width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+
+export const MintButton = styled.div`
+    width: 20%;
     height: 70%;
     box-sizing: border-box;
     border-radius: 20px;
@@ -172,12 +273,7 @@ export const MintButton = styled.div`
     }
     
     &:hover {
-        background-color: #FFFFFF;
         transform: scale(1.03, 1.03);
         box-shadow: 3px 3px 0.5px 0.5px #000000;
-        > p {
-            color: #000000;
-        }
     }
 `
-

@@ -9,19 +9,42 @@ import {
     OptionButtonWrapper,
     OptionButton,
 }
-from './style'
+from './style';
+
+import * as Scroll from 'react-scroll';
 
 const NavBar = () => {
     //declaration of some variable
-    const options = ['最新公告','證書領取','資訊驗證','問題排解'];
+    const options = [
+        {
+            'title': '最新公告',
+            'offset': 600,
+        },
+        {
+            'title': '證書領取',
+            'offset': 1200,
+        },
+        {
+            'title': '資訊驗證',
+            'offset': 1850,
+        },
+        {
+            'title': '問題排解',
+            'offset': 2500,
+        },
+        {
+            'title': '關於我們',
+            'offset': 3200,
+        },
+    ];
 
-    //declaration of react hooks.
+    const scroll = Scroll.animateScroll;
 
 
     //functions
     const getOptionButton = (options) => {
         return (
-            options.map((option) => (<OptionButton>{option}</OptionButton>))
+            options.map((option) => (<OptionButton onClick={()=>scroll.scrollTo(option.offset)}>{option.title}</OptionButton>))
         )
     }
 
@@ -29,8 +52,7 @@ const NavBar = () => {
         <Fragment>
             <NavBarWrapper>
                 <NavBarContent>
-                    <LogoWrapper>
-                        <p>CAE</p>
+                    <LogoWrapper onClick={scroll.scrollToTop}>
                     </LogoWrapper>
                     <OptionButtonWrapper>
                         {getOptionButton(options)}

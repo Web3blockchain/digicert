@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Logo from '../img/icon/caelogo.png';
+
 
 export const NavBarWrapper = styled.div`
     position: fixed;
@@ -8,26 +10,27 @@ export const NavBarWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #304C4D;
 `
 export const NavBarContent = styled.div`
-    width: 99%;
+    background-color: #304C4D;
+    width: 100%;
     height: 93%;
-    border: 2px solid black;
+    //border: 2px solid black;
     box-sizing: border-box;
-    background-color: red;
-    box-shadow: 5px 5px 1px -1px #000000;
-    margin-bottom: 2px;
+    //box-shadow: 5px 5px 1px -1px #000000;
+    //margin-bottom: 2px;
 `
 
 export const LogoWrapper = styled.div`
-    background-color: #FFFFFF;
+    background-image: url(${Logo});
+    background-size: contain;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     margin-left: .5rem;
-    margin-top: 0.4rem;
-    border-radius: 20px;
-    height: 80%;
-    width: 80px;
+    margin-top: .9rem;
+    height: 60%;
+    width: 100px;
     float: left;
     font-size: 32px;
     justify-content: center;
@@ -38,14 +41,14 @@ export const LogoWrapper = styled.div`
 
     transition: .5s;
     &:hover {
-        background-color: #000080;
+        background-color: #304C4D;
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
     }
 `
 export const OptionButtonWrapper = styled.div`
-    background-color: #FFFFFF;
+    background-color: #304C4D;
     height: 100%;
     dislay: flex;
     align-items: center;
@@ -53,6 +56,7 @@ export const OptionButtonWrapper = styled.div`
 `
 
 export const OptionButton = styled.button`
+    color: #F1F1F2;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: .7rem;
@@ -63,7 +67,7 @@ export const OptionButton = styled.button`
     text-align: center;
     list-style: none;
     font-size: 1.2rem;
-    background-color: #FFFFFF;
+    background-color: #304C4D;
     border-style: none;
     border-radius: 20px;
 
@@ -78,7 +82,7 @@ export const OptionButton = styled.button`
     font-family: Microsoft JhengHei;
 
     &:hover {
-        background-color: #000080;
+        background-color: #304C4D;
         transform: scale(1.03, 1.03);
         color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000080;

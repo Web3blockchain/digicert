@@ -1,7 +1,9 @@
 import styled, { keyframes } from "styled-components";
+import Frontpage from '../img/background/frontpage.png'
+
 
 const config = {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#A0D7D5',
     fontFamily: 'Microsoft JhengHei',
     fontColor: '#000000',
 }
@@ -12,22 +14,21 @@ const TypingAnimation = keyframes`
 `
 
 export const Wrapper = styled.div`
+    background-image: url(${Frontpage});
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 640px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: black;
-    background-color: ${config.backgroundColor};
 `
 
 export const ContentWrapper = styled.div`
     width: 70%;
-    height: 70%;
+    height: 40%;
     > p.Time {
-        font-size: 40px;
+        font-size: 35px;
         color: ${config.fontColor};
         padding: 10px 10px 10px 10px;
         font-family: ${config.fontFamily};
@@ -40,13 +41,13 @@ export const ContentWrapper = styled.div`
         letter-space: .15em;
         animation: ${TypingAnimation} 3s steps(25,end) forwards;
         
-        font-size: 72px;
+        font-size: 70px;
         color: ${config.fontColor};
         padding: 20px 20px 20px 10px;
         font-family: ${config.fontFamily};
     }
     > p.Status {
-        font-size: 25px;
+        font-size: 24px;
         text-align: center;
         font-family: ${config.fontFamily};
     }
@@ -54,7 +55,7 @@ export const ContentWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
     width: 100%;
-    height: 40%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,10 +68,11 @@ export const ConnectWalletButton = styled.button`
 
     border-radius: 20px;
     border: 2px solid black;
-    background-color: #FFFFFF;
+    background-color: #4F9994;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;
     transition: .3s;
+    
  
     > p {
         font-size: 22px;
@@ -80,11 +82,10 @@ export const ConnectWalletButton = styled.button`
     }
 
     &:hover {
-        background-color: #000080;
+        background-color: #30434D;
         transform: scale(1.03, 1.03);
-        color: #FFFFFF;
+        color: #F1F1F2;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
-        
     }
   
 `
