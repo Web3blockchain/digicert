@@ -30,11 +30,10 @@ const BulletionBoard = () => {
     const loadLimit = 6;
 
     const getContent = (item, flag, type) => {
-        console.log(type);
         if(flag==true){
             return (
-                <RecentAnounce className={type}>
-                    <RecentAnnounceDate><p className={type}>{item.date}</p></RecentAnnounceDate>
+                <RecentAnounce className={type} key={item.date}>
+                    <RecentAnnounceDate key={item.date}><p className={type}>{item.date}</p></RecentAnnounceDate>
                         <p>{item.text}</p>
                 </RecentAnounce>
             );

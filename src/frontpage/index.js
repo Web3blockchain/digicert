@@ -7,14 +7,15 @@ import { ethers } from 'ethers';
 
 import {
     Wrapper,
+    BackgroundImage,
     ContentWrapper,
     ButtonWrapper,
     ConnectWalletButton,
 } from './style';
 
-const FrontPage = () => {
+const FrontPage = ({parentCallback}) => {
 
-    const [connectionStatus, setConnectionStatus] = useState('Status: Not Connected To MetaMask.');
+    const [connectionStatus, setConnectionStatus] = useState('Connect Wallet');
     const [accountAddr, setAccountAddr] = useState('');
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
@@ -25,7 +26,7 @@ const FrontPage = () => {
             window.ethereum.request({method: 'eth_requestAccounts'})
                 .then((res)=>{
                     accountChangeHandler(res[0]);
-                    setConnectionStatus('Status: Wallet Connected');
+                    setConnectionStatus('Wallet Connected');
                 })
         }
         else
@@ -34,6 +35,7 @@ const FrontPage = () => {
 
     const accountChangeHandler = (newAccount) => {
         setAccountAddr(newAccount);
+        parentCallback(newAccount);
         updateEthers();
     }
 
@@ -47,7 +49,22 @@ const FrontPage = () => {
     return (
         <Fragment>
             <Wrapper>
-                <ContentWrapper>
+                <BackgroundImage />
+                <ButtonWrapper>
+                    <ConnectWalletButton
+                        onClick={handleButtonClick}
+                    ><p>{connectionStatus}</p>
+                    </ConnectWalletButton>
+                </ButtonWrapper>
+            </Wrapper>
+        </Fragment>
+    );
+}
+
+export default FrontPage;
+
+/* 
+ * <ContentWrapper>
                     <p className="Time">2022 Summer</p>
                     <p className="Name">NTU CAE DigiCert Service</p>
                     <ButtonWrapper>
@@ -55,9 +72,8 @@ const FrontPage = () => {
                     </ButtonWrapper>
                     <p className="Status">{connectionStatus}</p>
                 </ContentWrapper>
-            </Wrapper>
-        </Fragment>
-    );
-}
-
-export default FrontPage;
+ * 
+ * 
+ * 
+ * 
+ */

@@ -28,15 +28,15 @@ const ProbSol = () => {
 
     const getProblemType = (items) => {
         return (items.map((item)=>(
-            <Choice onClick={()=>handleChoiceClick(item)} value='submit' type="submit">{item.title}</Choice>
+            <Choice onClick={()=>handleChoiceClick(item)} value='submit' type="submit" key={item.answer}>{item.title}</Choice>
         )));
     };
 
     const getOptions = (items) => {
         const options = [];
-        options.push(<option value="" className="visible" selected>請選擇問題</option>);
+        options.push(<option value="" className="visible" key="" defaultValue>請選擇問題</option>);
         for(let i=0;i<items.length;i++)
-            options.push(<option className="visible" value={items[i].answer}>{items[i].question}</option>)
+            options.push(<option className="visible" value={items[i].answer} key={items[i].answer}>{items[i].question}</option>)
         return options;
     };
 

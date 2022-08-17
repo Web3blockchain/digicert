@@ -18,7 +18,7 @@ const NavBar = () => {
     const options = [
         {
             'title': '最新公告',
-            'offset': 600,
+            'offset': 625,
         },
         {
             'title': '證書領取',
@@ -30,11 +30,11 @@ const NavBar = () => {
         },
         {
             'title': '問題排解',
-            'offset': 2500,
+            'offset': 2530,
         },
         {
             'title': '關於我們',
-            'offset': 3200,
+            'offset': 3275,
         },
     ];
 
@@ -44,7 +44,7 @@ const NavBar = () => {
     //functions
     const getOptionButton = (options) => {
         return (
-            options.map((option) => (<OptionButton onClick={()=>scroll.scrollTo(option.offset)}>{option.title}</OptionButton>))
+            options.map((option) => (<OptionButton onClick={()=>scroll.scrollTo(option.offset)} key={option.title}>{option.title}</OptionButton>))
         )
     }
 

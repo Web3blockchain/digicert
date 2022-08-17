@@ -104,7 +104,7 @@ export const RecentAnnounceDate = styled.div`
 
 export const NewAnnounceWrapper = styled.div`
     background-image: url(${Post});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 32.6%;
     height: 100%;
