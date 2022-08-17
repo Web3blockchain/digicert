@@ -12,14 +12,14 @@ export const Wrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div`
-    width: 70%;
-    height: 60%;
+    width: 75%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 `
 export const RecentAnnounceWrapper = styled.div`
-    width: 60%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@ export const RecentAnnounceWrapper = styled.div`
 `
 
 export const RecentAnnounceTitle = styled.div`
+    color: #304C4D;
     width: 100%;
     height: 20%;
     background-color: #A0D7D5;
@@ -42,7 +43,7 @@ export const RecentAnnounceTitle = styled.div`
         width: 70%;
         text-align: center;
         font-size: 34px;
-        font-family: Microsoft JhengHei;
+        font-family: Bebas;
     }
     > div.icon {
         background-image: url(${Icon});
@@ -63,12 +64,13 @@ export const RecentAnounce = styled.div`
     flex-direction: row;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: #304C4D;
     > p {
         text-align: center;
         padding-top: .3rem;
         padding-left: 1.3rem;
         font-size: 20px;
-        font-family: Microsoft JhengHei;
+        font-family: NotoSansTC;
     }
     &.odd {
         background-color: #F1F1F2;
@@ -85,19 +87,20 @@ export const RecentAnnounceDate = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
     > p.odd {
         background-color: #F1F1F2;
         text-align: center;
-        font-size: 24px;
-        font-weight: 900;
-        font-family: Microsoft JhengHei;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: Bebas;
     }
     > p.even {
         background-color: #FFFFFF;
         text-align: center;
-        font-size: 24px;
-        font-weight: 900;
-        font-family: Microsoft JhengHei;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: Bebas;
     }
     border-right: 2px solid black;
 `
@@ -106,13 +109,13 @@ export const NewAnnounceWrapper = styled.div`
     background-image: url(${Post});
     background-size: cover;
     background-repeat: no-repeat;
-    width: 32.6%;
+    width: 29.4%;
     height: 100%;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;
+    box-shadow: 1.5px 1.5px 0.5px 0.5px #304C4D;
     align-items: center;
     > div.Container {
         display: flex;
@@ -122,7 +125,7 @@ export const NewAnnounceWrapper = styled.div`
     }
     transition: .3s;
     &:hover {
-        box-shadow: 4px 4px 2px 2px #000000;
+        box-shadow: 4px 4px 2px 2px #304C4D;
     }
 `
 
@@ -168,6 +171,9 @@ export const NextButton = styled.button`
     background-color: #F1F1F2;
     //box-shadow: 1px 1px .3px .3px #000000;
     transition: .3s;
+    font-family: Bebas;
+    letter-spacing: 3px;
+    color: #304C4D;
     &:hover {
         background-color: #4F9994;
         transform: scale(1.03, 1.03);
@@ -192,6 +198,9 @@ export const PrevButton = styled.button`
     background-color: #F1F1F2;
     //box-shadow: .8px .8px .2px px #000000;
     transition: .3s;
+    font-family: Bebas;
+    letter-spacing: 3px;
+    color: #304C4D;
     &:hover {
         background-color: #4F9994;
         transform: scale(1.03, 1.03);

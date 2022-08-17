@@ -6,12 +6,12 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Microsoft JhengHei;
+    font-family: Bebas;
     background-color: #A0D7D5;
 `
 
 export const ContentWrapper = styled.div`
-    width: 80%;
+    width: 72%;
     height: 65%;
 `
 export const TitleWrapper = styled.div`
@@ -19,7 +19,8 @@ export const TitleWrapper = styled.div`
     height: 15%;
     box-sizing: border-box;
     text-align: center;
-    font-size: 44px;
+    font-size: 42px;
+    color: #4F9994;
 `
 
 export const ChineseWrapper = styled.div`
@@ -27,8 +28,9 @@ export const ChineseWrapper = styled.div`
     height: 30%;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: Microsoft JhengHei;
+    font-family: NotoSansTC;
     line-height: 35px;
+    color: #304C4D;
 `
 
 export const EnglishWrapper = styled.div`
@@ -36,6 +38,7 @@ export const EnglishWrapper = styled.div`
     height: 55%;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: Microsoft JhengHei;
+    font-family: NotoSansTC;
     line-height: 35px;
+    color: #304C4D;
 `

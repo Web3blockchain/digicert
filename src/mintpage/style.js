@@ -103,7 +103,7 @@ export const TopContainer = styled.div`
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 30px;
-        font-family: Microsoft JhengHei;
+        font-family: NotoSansTC;
         text-align: center;
         color: white;
     }
@@ -124,11 +124,11 @@ export const YearSelect = styled.select`
     border: 1px solid white;
     border-radius: 10px;
     color: #FFFFFF;
-    font-family: Microsoft JhengHei;
-    font-size: 15px;
+    font-family: Bebas;
+    font-size: 24px;
     > option {
         text-align: center;
-        font-size: 16px;
+        font-size: 22px;
         color: #000000;
     }
 `
@@ -186,7 +186,7 @@ export const MediaButton = styled.a`
     height: 40%;
     box-sizing: border-box;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -203,12 +203,13 @@ export const MediaButton = styled.a`
     }
     > p {
         text-align: center;
+        letter-spacing: 1px;
         padding-top: .1rem;
         width: 55%;
         height: 51%;
         font-size: 24px;
-        color: #000000;
-        font-family: 'Microsoft JhengHei';
+        color: #FFFFFF;
+        font-family: 'Bebas';
         margin: 0 0 0 0;
     }
 `
@@ -259,17 +260,19 @@ export const MintButton = styled.div`
     width: 20%;
     height: 70%;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 10px;
     border: .5px solid white;
+    background-color: #A0D7D5;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .3s;
     > p {
         text-align: center;
-        font-size: 30px;
-        font-family: 'Microsoft JhengHei';
-        color: #FFFFFF;
+        font-size: 36px;
+        font-family: 'Bebas';
+        color: #304C4D;
+        letter-spacing: 4px;
     }
     
     &:hover {

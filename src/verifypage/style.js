@@ -70,7 +70,7 @@ export const TextArea = styled.textarea`
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    font-family: 'Microsoft JhengHei';
+    font-family: 'NotoSansTC';
     &:hover {
         overflow-x: auto;
     }
@@ -87,7 +87,7 @@ export const ResultWrapper = styled.div`
     > p {
         margin-left: 5px;
         font-size: 30px;
-        font-family: Microsoft JhengHei;
+        font-family: NotoSansTC;
         margin-top: 5px;
     }
 `

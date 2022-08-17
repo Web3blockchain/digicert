@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Frontpage from '../img/background/frontpage.png'
+import Frontpage from '../img/background/frontpage2.png'
 
 
 const config = {

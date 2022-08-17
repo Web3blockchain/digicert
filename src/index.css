@@ -41,3 +41,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+	font-family: 'NotoSansTC';
+	src: url('./font/Noto_Sans_TC/NotoSansTC-Regular.otf') format('opentype');
+  }
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('./font/Bebas/Bebas-Regular.otf') format('opentype');
+  }

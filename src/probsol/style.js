@@ -23,7 +23,7 @@ export const HeaderContent = styled.div`
     box-sizing: border-box;
     border-radius: 20px;
     text-align: center;
-    font-family: Microsoft JhengHei;
+    font-family: NotoSansTC;
 
     box-sizing: border-box;
     transition: .3s;
@@ -60,7 +60,7 @@ export const Choice = styled.button`
     background-color: #F1F1F2;
     > p {
         font-color: black;
-        font-family: Microsoft JhengHei;
+        font-family: NotoSansTC;
         font-size: 15px;
     }
     &:hover {
@@ -91,12 +91,12 @@ export const OptionSelect = styled.select`
     text-align: center;
     font-size: 15px;
     color: black;
-    font-family: Microsoft JhengHei;
+    font-family: NotoSansTC;
     border: 1px solid #304C4D;
     > option.visible {
         background-color: #F1F1F2;
         font-size: 15px;
-        font-family: Microsoft JhengHei;
+        font-family: NotoSansTC;
     }
 `
 export const Outcome = styled.div`
@@ -109,6 +109,6 @@ export const Outcome = styled.div`
     word-wrap: break-word;
     font-size: 30px;
     overflow: auto;
-    font-family: Microsoft JhengHei;
+    font-family: NotoSansTC;
     padding: 10px 10px 10px 10px;
 `
