@@ -1,4 +1,4 @@
-export const Title = 'NTU CAE DIGICERT SERVICE';
+export const Title = '關於我們'; /*NTU CAE DIGICERT SERVICE*/
 
 export const ChineseDes = '電腦輔助工程組之所以成立，乃是因應土木工程對資訊技術日漸增加的需求，培養具備工程與資訊專業知識的跨領域人才，以增進相關研究的深度與廣度，並提升土木工程領域資訊化與自動化的程度。迄今，電腦輔助工程組的師生已在計算科學與工程以及工程系統整合兩大主軸上有深入的研究。';
 
