@@ -31,8 +31,9 @@ const VerifyPage = () => {
                     <SearchBoxWrapper>
                         <SearchBox />
                         <TextArea 
-                            placeholder="請在此輸入錢包地址以查詢CAE官方所核發之相關證書"
-                        />                         
+                            placeholder="Please enter your address"
+                        />
+                         
                     </SearchBoxWrapper>
                     <ResultWrapper>
                         <ResultCard

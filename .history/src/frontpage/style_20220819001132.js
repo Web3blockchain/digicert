@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import Frontpage from '../img/background/frontgraph.png'
-import ConnectIcon from '../img/icon/connecticon.png'
+import Frontpage from '../img/background/frontpage2.png'
+
 
 const config = {
     backgroundColor: '#A0D7D5',
@@ -56,12 +56,10 @@ export const ContentWrapper = styled.div`
 export const BackgroundImage = styled.div`
     width: 100%;
     height: 100%;
-    margin: 80px 0 0 0;
-    // border: 2px solid #000000;
-    background-color: #A0D7D5;
+    background-color: #304C4D;
     background-image: url(${Frontpage});
     background-position: center;
-    background-size: auto 88%;
+    background-size: auto 60%;
     background-repeat: no-repeat;
 `
 
@@ -81,7 +79,6 @@ export const ConnectWalletButton = styled.button`
 
     border-radius: 20px;
     border: 1px solid black;
-    // background-image: url(${ConnectIcon});
     background-color: #4F9994;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;

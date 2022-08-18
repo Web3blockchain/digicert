@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Frontpage from '../img/background/frontgraph.png'
-import ConnectIcon from '../img/icon/connecticon.png'
+import ConnectIcon from '../img/Icon/connecticon.png'
 
 const config = {
     backgroundColor: '#A0D7D5',

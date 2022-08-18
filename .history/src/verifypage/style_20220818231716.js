@@ -69,7 +69,7 @@ export const TextArea = styled.textarea`
     margin: 0 0 0 0;
     padding: 0 0 0 5px;
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 36px;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;

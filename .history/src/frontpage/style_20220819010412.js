@@ -81,7 +81,7 @@ export const ConnectWalletButton = styled.button`
 
     border-radius: 20px;
     border: 1px solid black;
-    // background-image: url(${ConnectIcon});
+    background-image: url(${ConnectIcon});
     background-color: #4F9994;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;
