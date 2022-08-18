@@ -27,7 +27,7 @@ import {
     allProgram,
 } from '../data/mintpage';
 
-const MintPage = () => {
+const MintPage = ({accountAddr}) => {
 
     const programType = [...allType];
 
@@ -50,7 +50,7 @@ const MintPage = () => {
 
     const getOptions = (items) => {
         return (items.map((item)=>(
-            <option className="option" value={item}>{item}</option>
+            <option className="option" value={item} key={item}>{item}</option>
         )));
     };
     
@@ -61,8 +61,8 @@ const MintPage = () => {
         const socialMedia = yearData.socialIcons;
         return (socialMedia.map((item)=>{
             return (
-                <MediaButton href={item.URL} target="_blank">
-                    <SocialIcon className={item.type} />
+                <MediaButton href={item.URL} target="_blank" key={item.URL}>
+                    <SocialIcon className={item.type}/>
                     <p>{item.title}</p>
                 </MediaButton>
             )
@@ -72,7 +72,7 @@ const MintPage = () => {
         const dotArray = [];
         for(let i=0;i<allType.length;i++){
             if(i===pageCount)
-                dotArray.push(<Dot className="black" />)
+                dotArray.push(<Dot className="black"/>)
             else
                 dotArray.push(<Dot className="white"/>)
         }
@@ -80,9 +80,8 @@ const MintPage = () => {
     }
 
     const handleMintButtonClick = () => {
-        
+        console.log(accountAddr);
     }
-
 
     return (
         <Fragment>
@@ -90,7 +89,7 @@ const MintPage = () => {
                 <ContentWrapper>
                     <DisplayWrapper className={programType[pageCount]}>
                         <ButtonContainer>
-                            <PrevButton onClick={handlePrevButtonClick}></PrevButton>
+                            <PrevButton onClick={handlePrevButtonClick} />
                         </ButtonContainer>
                         <CentralContainer>
                             <TopContainer>
@@ -107,7 +106,7 @@ const MintPage = () => {
                                 </div>
                             </DotWrapper>
                             <MintButtonContainer>
-                                <MintButton><p>Mint</p></MintButton>
+                                <MintButton onClick={handleMintButtonClick}><p>Mint</p></MintButton>
                             </MintButtonContainer>
                         </CentralContainer>
                         <ButtonContainer>

@@ -14,14 +14,14 @@ const TypingAnimation = keyframes`
 `
 
 export const Wrapper = styled.div`
-    background-image: url(${Frontpage});
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 640px;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid black;
 `
 
 export const ContentWrapper = styled.div`
@@ -53,12 +53,22 @@ export const ContentWrapper = styled.div`
     }
 `
 
+export const BackgroundImage = styled.div`
+    width: 100%;
+    height: 70%;
+    background-image: url(${Frontpage});
+    background-size: cover;
+    background-repeat: no-repeat;
+`
+
+
 export const ButtonWrapper = styled.div`
     width: 100%;
-    height: 60%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F1F1F2;
 `
 
 export const ConnectWalletButton = styled.button`
@@ -67,7 +77,7 @@ export const ConnectWalletButton = styled.button`
     height: 30%;
 
     border-radius: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: #4F9994;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;

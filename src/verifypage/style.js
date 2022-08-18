@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SearchLogo from '../img/search.png';
+import Modal from 'styled-react-modal';
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -82,13 +83,25 @@ export const ResultWrapper = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-around;
     > p {
         margin-left: 5px;
         font-size: 30px;
         font-family: NotoSansTC;
         margin-top: 5px;
     }
+`
+
+export const ModalCard = Modal.styled`
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #F1F1F2;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 60%;
+    height: 80%;
 `
 
 export const ResultCard = styled.div`

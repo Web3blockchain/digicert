@@ -48,7 +48,7 @@ const NavBar = () => {
     //functions
     const getOptionButton = (options) => {
         return (
-            options.map((option) => (<OptionButton onClick={()=>scroll.scrollTo(option.offset)}>{option.title}</OptionButton>))
+            options.map((option) => (<OptionButton onClick={()=>scroll.scrollTo(option.offset)} key={option.title}>{option.title}</OptionButton>))
         )
     }
 
