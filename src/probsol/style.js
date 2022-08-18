@@ -101,7 +101,7 @@ export const OptionSelect = styled.select`
 `
 export const Outcome = styled.div`
     width: 100%;
-    height: 85%;
+    height: 50%;
     background-color: #FFFFFF;
     box-sizing: border-box;
     border: 1px solid black;
@@ -111,4 +111,8 @@ export const Outcome = styled.div`
     overflow: auto;
     font-family: NotoSansTC;
     padding: 10px 10px 10px 10px;
+    transition: 1s;
+    &:hover {
+        height: 85%;
+    }
 `
