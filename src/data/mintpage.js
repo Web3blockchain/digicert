@@ -74,10 +74,10 @@ export const alumniAssociation = {
  *   大學部專題
  */
 
-export const undergratesProjectYear = ['108','110'];
+export const undergratesProjectYear = ['109','110'];
 
 export const undergratesProject = {
-    '108': {
+    '109': {
         socialIcons: [
             {
                 type: 'line',
