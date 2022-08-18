@@ -57,7 +57,7 @@ export const SearchBox = styled.div`
     }
 `
 export const TextArea = styled.textarea`
-    // placeholder: "Hello"
+    placeholder
     width: 93%;
     height: 100%;
     background-color: #F1F1F2;

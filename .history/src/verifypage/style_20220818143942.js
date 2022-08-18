@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SearchLogo from '../img/searchicon.png';
+import SearchLogo from '../img/search.png';
 import Modal from 'styled-react-modal';
 
 export const Wrapper = styled.div`
@@ -28,36 +28,32 @@ export const ContentWrapper = styled.div`
 export const SearchBoxWrapper = styled.div`
     width: 100%;
     height: 12%;
-    background-color: #304C4D;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     transition: 1.5s;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
-    border: 2px solid black;
-    border-color: #304C4D;
-    box-shadow: 3px 2px 3px -2px #304C4D;
+    border: 1.5px solid black;
+    box-shadow: 3px 3px 3px -1px #000000;
     margin-bottom: 5px;
 `
 export const SearchBox = styled.div`
-    width: 6.5%;
-    height: 80%;
-    background-color: #304C4D;
+    width: 4%;
+    height: 60%;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     transition: .3s;
-    margin: 0 0.5%;
     background-image: url(${SearchLogo});
-    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     &:hover {
         transform: scale(1.1, 1.1);
-        // color: #FFFFFF;
+        color: #FFFFFF;
     }
 `
 export const TextArea = styled.textarea`
-    // placeholder: "Hello"
     width: 93%;
     height: 100%;
     background-color: #F1F1F2;
@@ -68,9 +64,9 @@ export const TextArea = styled.textarea`
     outline: none;
     resize: none;
     margin: 0 0 0 0;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 0;
     box-sizing: border-box;
-    font-size: 36px;
+    font-size: 45px;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -103,8 +99,7 @@ export const ModalCard = Modal.styled`
     background-color: #F1F1F2;
     box-sizing: border-box;
     border: 2px solid black;
-    border-color: #F1F1F2;
-    // border-radius: 20px;
+    border-radius: 20px;
     width: 60%;
     height: 80%;
 `
@@ -116,8 +111,7 @@ export const ResultCard = styled.div`
     width: 48%;
     height: 75%;
     box-sizing: border-box;
-    // border-radius: 20px;
+    border-radius: 20px;
     background-color: #F1F1F2;
     border: 2px solid black;
-    border-color: #F1F1F2;
 `

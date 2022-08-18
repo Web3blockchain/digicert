@@ -35,42 +35,38 @@ export const SearchBoxWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
-    border: 2px solid black;
-    border-color: #304C4D;
-    box-shadow: 3px 2px 3px -2px #304C4D;
+    border: 1.5px solid black;
+    box-shadow: 3px 3px 3px -1px #304C4D;
     margin-bottom: 5px;
 `
 export const SearchBox = styled.div`
-    width: 6.5%;
+    width: 4.5%;
     height: 80%;
     background-color: #304C4D;
     box-sizing: border-box;
     transition: .3s;
-    margin: 0 0.5%;
     background-image: url(${SearchLogo});
-    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     &:hover {
         transform: scale(1.1, 1.1);
-        // color: #FFFFFF;
+        color: #FFFFFF;
     }
 `
 export const TextArea = styled.textarea`
-    // placeholder: "Hello"
     width: 93%;
     height: 100%;
     background-color: #F1F1F2;
-    border-left: 0px;
+    border-left: 20px;
     border-top: 0px;
     border-bottom: 0px;
     border-right: 1.5px solid black;
     outline: none;
     resize: none;
     margin: 0 0 0 0;
-    padding: 0 0 0 5px;
+    padding: 0 0 0 0;
     box-sizing: border-box;
-    font-size: 36px;
+    font-size: 45px;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -103,7 +99,6 @@ export const ModalCard = Modal.styled`
     background-color: #F1F1F2;
     box-sizing: border-box;
     border: 2px solid black;
-    border-color: #F1F1F2;
     // border-radius: 20px;
     width: 60%;
     height: 80%;
@@ -119,5 +114,4 @@ export const ResultCard = styled.div`
     // border-radius: 20px;
     background-color: #F1F1F2;
     border: 2px solid black;
-    border-color: #F1F1F2;
 `

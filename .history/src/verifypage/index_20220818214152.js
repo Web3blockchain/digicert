@@ -1,7 +1,6 @@
 import React, {
     Fragment, 
     useState,
-    Input
 } from "react";
 
 import {
@@ -31,11 +30,9 @@ const VerifyPage = () => {
                     <SearchBoxWrapper>
                         <SearchBox />
                         <TextArea 
-                            // placeholder="Hello"
+                            placeholder="測試測試"
                         />
-                        {/* <TextArea>
-                            <Input placeholder="A small text input" />
-                        </TextArea> */}
+                        <TextArea></TextArea>
                          
                     </SearchBoxWrapper>
                     <ResultWrapper>

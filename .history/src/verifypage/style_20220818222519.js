@@ -46,7 +46,7 @@ export const SearchBox = styled.div`
     background-color: #304C4D;
     box-sizing: border-box;
     transition: .3s;
-    margin: 0 0.5%;
+    margin: 0 0.6%;
     background-image: url(${SearchLogo});
     background-position: center;
     background-size: contain;
@@ -57,7 +57,6 @@ export const SearchBox = styled.div`
     }
 `
 export const TextArea = styled.textarea`
-    // placeholder: "Hello"
     width: 93%;
     height: 100%;
     background-color: #F1F1F2;

@@ -31,7 +31,7 @@ const VerifyPage = () => {
                     <SearchBoxWrapper>
                         <SearchBox />
                         <TextArea 
-                            // placeholder="Hello"
+                            placeholder="Hello"
                         />
                         {/* <TextArea>
                             <Input placeholder="A small text input" />

@@ -1,7 +1,6 @@
 import React, {
     Fragment, 
     useState,
-    Input
 } from "react";
 
 import {
@@ -30,13 +29,7 @@ const VerifyPage = () => {
                     <div className="Container">
                     <SearchBoxWrapper>
                         <SearchBox />
-                        <TextArea 
-                            // placeholder="Hello"
-                        />
-                        {/* <TextArea>
-                            <Input placeholder="A small text input" />
-                        </TextArea> */}
-                         
+                        <TextArea placeholder="請輸入 DD/MM/YYYY的日期格式" />
                     </SearchBoxWrapper>
                     <ResultWrapper>
                         <ResultCard
