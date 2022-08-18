@@ -1,6 +1,7 @@
 import React, { 
   Fragment,
   useState,
+  useCallback,
 } from "react";
 import NavBar from "./navbar";
 import FrontPage from "./frontpage";
@@ -9,7 +10,6 @@ import VerifyPage from "./verifypage";
 import ProbSol from "./probsol";
 import MintPage from "./mintpage";
 import AboutPage from "./aboutpage";
-import { useCallback } from "react";
 
 function App() {
   const [accountAddr, setAccountAddr] = useState('');
