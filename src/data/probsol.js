@@ -48,7 +48,7 @@ const problem_4 = {
     title: '創建錢包常見問題',
     QA: [
         {
-            question: '如何包',
+            question: '如何創建錢包',
             answer: '到 MetaMask建',
         },
         {
