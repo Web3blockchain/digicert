@@ -29,7 +29,7 @@ const problem_2 = {
         },
         {
             question: '什麼是錢包',
-            answer: '錢包是一個可以存放你數位資產(如數字貨幣、NFT)的空間，又可分為熱錢包(Hot Wallet)與冷錢包(Cold Wallet)，兩者的區別在於是否透過網路連結。本官網建議使用的Metamask即是熱錢包的一種。',
+            answer: '錢包是一個可以存放你數位資產(如數字貨幣、NFT)的空間，又可分為熱錢包(Hot Wallet)與冷錢包(Cold Wallet)，兩者的區別在於透過網路連結。本官網建議使用的Metamask即是熱錢包的一種。',
         },
         {
             question: '什麼是助憶詞',
