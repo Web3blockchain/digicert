@@ -83,15 +83,16 @@ export const ConnectWalletButton = styled.button`
     border-radius: 5px;
     border: 1px solid #304C4D;
     background-image: url(${ConnectIcon});
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #4F9994;
     box-sizing: border-box;
     box-shadow: 1.5px 1.5px 0.5px 0.5px #000000;
     transition: .3s;
-    
  
     > p {
-        font-size: 34px;
+        text-align: center;
+        font-size: 20px;
         margin: 0 0 0 40px;
         padding: 0 0 0 0;
         font-family: Bebas;
@@ -101,7 +102,7 @@ export const ConnectWalletButton = styled.button`
     &:hover {
         background-color: #30434D;
         transform: scale(1.03, 1.03);
-        color: #F1F1F2;
+        color: #FFFFFF;
         box-shadow: 3px 3px 0.5px 0.5px #000000;
     }
   
