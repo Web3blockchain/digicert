@@ -7,28 +7,29 @@ const internProgram = {
     '109': {
         socialIcons: [
             {
-                type: 'twitter',
-                title:  'twitter',
-                URL: 'https://www.csie.ntu.edu.tw/people/bio.php?PID=55',
+                type: 'website',
+                title:  'Internship',
+                URL: 'https://www.internship.caece.net',
             },
             {
                 type: 'facebook',
                 title: 'facebook',
-                URL: 'https://project-style-demo.vercel.app/?fbclid=IwAR1_hLckqYD2Bx7IMu_cogRQKuxaFh38VHmPdpQPVeaNpf-EjBvbQXF-Gh8',
+                URL: 'https://www.facebook.com/CAEinternship/',
             },
         ],
     },
+    
     '110': {
         socialIcons: [
             {
-                type: 'instagram',
-                title: 'instagram',
-                URL: 'https://www.google.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&rlz=1C1CHBF_zh-TWTW904TW904&oq=%E5%8F%AF&aqs=chrome.1.69i57j0i131i433i512l3j0i433i512j69i61l3.3191j0j7&sourceid=chrome&ie=UTF-8'
+                type: 'website',
+                title: 'Internship',
+                URL: 'https://www.internship.caece.net'
             },
             {
-                type: 'website',
-                title: 'myweb',
-                URL: 'https://www.google.com/search?q=%E9%8C%A8%E9%BB%9E%E9%BB%9E%E6%93%8A%E8%B7%B3%E8%BD%89+react&rlz=1C1CHBF_zh-TWTW904TW904&oq=&aqs=chrome.7.35i39i362l8.58884j0j7&sourceid=chrome&ie=UTF-8',
+                type: 'facebook',
+                title: 'facebook',
+                URL: 'https://www.facebook.com/CAEinternship/',
             }
         ]
     }
@@ -44,28 +45,28 @@ const alumniAssociation = {
     '109': {
         socialIcons: [
             {
-                type: 'twitter',
-                title:  'twitter',
-                URL: 'https://www.csie.ntu.edu.tw/people/bio.php?PID=55',
+                type: 'discord',
+                title:  'Discord',
+                URL: 'https://discord.gg/k9pjSt7y4C/',
             },
             {
-                type: 'facebook',
-                title: 'facebook',
-                URL: 'https://project-style-demo.vercel.app/?fbclid=IwAR1_hLckqYD2Bx7IMu_cogRQKuxaFh38VHmPdpQPVeaNpf-EjBvbQXF-Gh8',
+                type: 'website',
+                title: 'Alumni',
+                URL: 'https://alumni.ntuce.tw/',
             },
         ],
     },
     '110': {
         socialIcons: [
             {
-                type: 'instagram',
-                title: 'instagram',
-                URL: 'https://www.google.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&rlz=1C1CHBF_zh-TWTW904TW904&oq=%E5%8F%AF&aqs=chrome.1.69i57j0i131i433i512l3j0i433i512j69i61l3.3191j0j7&sourceid=chrome&ie=UTF-8'
+                type: 'discord',
+                title: 'Discord',
+                URL: 'https://discord.gg/k9pjSt7y4C/'
             },
             {
                 type: 'website',
-                title: 'myweb',
-                URL: 'https://www.google.com/search?q=%E9%8C%A8%E9%BB%9E%E9%BB%9E%E6%93%8A%E8%B7%B3%E8%BD%89+react&rlz=1C1CHBF_zh-TWTW904TW904&oq=&aqs=chrome.7.35i39i362l8.58884j0j7&sourceid=chrome&ie=UTF-8',
+                title: 'Alumni',
+                URL: 'https://alumni.ntuce.tw/',
             }
         ]
     }
@@ -81,28 +82,28 @@ const undergratesProject = {
     '109': {
         socialIcons: [
             {
-                type: 'line',
-                title:  'line',
-                URL: 'https://www.csie.ntu.edu.tw/people/bio.php?PID=55',
+                type: 'website',
+                title:  'NTUCE',
+                URL: 'https://www.ce.ntu.edu.tw',
             },
             {
-                type: 'telegram',
-                title: 'telegram',
-                URL: 'https://project-style-demo.vercel.app/?fbclid=IwAR1_hLckqYD2Bx7IMu_cogRQKuxaFh38VHmPdpQPVeaNpf-EjBvbQXF-Gh8',
+                type: 'website',
+                title: 'CAECE',
+                URL: 'https://www.caece.net',
             },
         ],
     },
     '110': {
         socialIcons: [
             {
-                type: 'facebook',
-                title: 'instagram',
-                URL: 'https://www.google.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&rlz=1C1CHBF_zh-TWTW904TW904&oq=%E5%8F%AF&aqs=chrome.1.69i57j0i131i433i512l3j0i433i512j69i61l3.3191j0j7&sourceid=chrome&ie=UTF-8'
+                type: 'website',
+                title: 'NTUCE',
+                URL: 'https://www.ce.ntu.edu.tw'
             },
             {
                 type: 'website',
-                title: 'myweb',
-                URL: 'https://www.google.com/search?q=%E9%8C%A8%E9%BB%9E%E9%BB%9E%E6%93%8A%E8%B7%B3%E8%BD%89+react&rlz=1C1CHBF_zh-TWTW904TW904&oq=&aqs=chrome.7.35i39i362l8.58884j0j7&sourceid=chrome&ie=UTF-8',
+                title: 'CAECE',
+                URL: 'https://www.caece.net',
             }
         ]
     }
