@@ -3,6 +3,9 @@ import React, {
     useState,
 } from "react";
 import {
+    ethers
+} from "ethers";
+import {
     Wrapper,
     ContentWrapper,
     DisplayWrapper,
@@ -27,13 +30,20 @@ import {
     allProgram,
 } from '../data/mintpage';
 
-const MintPage = ({accountAddr}) => {
+import abi from '../abi/contract_abi.json';
+
+const MintPage = ({accountAddr, tempSigner}) => {
 
     const programType = [...allType];
 
     const [pageCount, setPageCount] = useState(0);
 
     const [year, setYear] = useState(allProgram[allType[pageCount]].year[0]);
+
+    const [contractAddr, setContractAdddr] = useState('0xB48C9d65f9C4451b1B33CEB9229550a3157c8Ea7');
+
+    const [contractABI, setcontractABI] = useState(abi);
+
 
     const handlePrevButtonClick = () => {
         const num = (pageCount===0)? programType.length-1:pageCount-1;
@@ -80,8 +90,17 @@ const MintPage = ({accountAddr}) => {
     }
 
     const handleMintButtonClick = () => {
-        console.log(accountAddr);
+        let contract = new ethers.Contract(contractAddr, contractABI, tempSigner);
+        if(window.ethereum && window.ethereum.isMetaMask){
+            contract.mintCAEMeta();
+            console.log('success');
+            alert('Please wait for a minute, and you can check your NFT on opensea');
+        }
+        else{
+            alert('fail');
+        }
     }
+
 
     return (
         <Fragment>

@@ -14,8 +14,11 @@ import AboutPage from "./aboutpage";
 function App() {
   const [accountAddr, setAccountAddr] = useState('');
 
-  const addrCallback = useCallback((addr)=>{
+  const [signer, setSigner] = useState(null);
+
+  const addrCallback = useCallback((addr, tempSigner)=>{
     setAccountAddr(addr);
+    setSigner(tempSigner);
   }, []);
 
   return (
@@ -25,7 +28,9 @@ function App() {
         parentCallback={addrCallback}/>
       <BulletionBoard />
       <MintPage 
-        accountAddr={accountAddr}/>
+        accountAddr={accountAddr}
+        tempSigner={signer}  
+      />
       <VerifyPage />
       <ProbSol />
       <AboutPage />

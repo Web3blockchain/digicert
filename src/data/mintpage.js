@@ -2,6 +2,7 @@
  *   暑期實習
  */
 export const internProgramYear = ['109','110'];
+
 const internProgram = {
     '109': {
         socialIcons: [
@@ -39,7 +40,7 @@ const internProgram = {
 
 export const alumniAssociationYear = [109,110];
 
-export const alumniAssociation = {
+const alumniAssociation = {
     '109': {
         socialIcons: [
             {
@@ -76,7 +77,7 @@ export const alumniAssociation = {
 
 export const undergratesProjectYear = ['109','110'];
 
-export const undergratesProject = {
+const undergratesProject = {
     '109': {
         socialIcons: [
             {
@@ -107,6 +108,7 @@ export const undergratesProject = {
     }
 }
 
+
 export const allType = [
     'internProgram',
     'alumniAssociation',
@@ -118,16 +120,19 @@ export const allProgram = {
         title: '暑期實習',
         year: internProgramYear,
         description: internProgram,
+        //contract: interProgramContract,
     },
     'alumniAssociation': {
         title: '校友會',
         year: alumniAssociationYear,
         description: alumniAssociation,
+        //contract: alumniAssociationContract,
     },
     'undergratesProject': {
         title: '大學專題',
         year: undergratesProjectYear,
-        description: undergratesProject
+        description: undergratesProject,
+        //contract: undergratesProjectContract,
     }
 }
 
