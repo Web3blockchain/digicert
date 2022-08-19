@@ -62,8 +62,13 @@ const internProgram = {
 
 export const alumniAssociationYear = [111,112];
 
+<<<<<<< HEAD
+export const alumniAssociation = {
+    '111': {
+=======
 const alumniAssociation = {
     '111': {
+>>>>>>> 2bb3dfdd3996c9f661d930d7213151dd9c333dac
         socialIcons: [
             {
                 type: 'CAECE',
@@ -99,8 +104,13 @@ const alumniAssociation = {
 
 export const undergratesProjectYear = ['111','112'];
 
-const undergratesProject = {
+<<<<<<< HEAD
+export const undergratesProject = {
     '111': {
+=======
+const undergratesProject = {
+    '109': {
+>>>>>>> 2bb3dfdd3996c9f661d930d7213151dd9c333dac
         socialIcons: [
             {
                 type: 'CAECE',

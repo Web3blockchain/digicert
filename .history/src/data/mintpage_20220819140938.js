@@ -99,6 +99,9 @@ const alumniAssociation = {
 
 export const undergratesProjectYear = ['111','112'];
 
+<<<<<<< HEAD
+export const undergratesProject = {
+    '111': {
 const undergratesProject = {
     '111': {
         socialIcons: [

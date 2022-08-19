@@ -35,15 +35,15 @@ const FrontPage = ({parentCallback}) => {
 
     const accountChangeHandler = (newAccount) => {
         setAccountAddr(newAccount);
-        parentCallback(newAccount);
-        updateEthers();
+        updateEthers(newAccount);
     }
 
-    const updateEthers = () => {
+    const updateEthers = (addr) => {
         let tempProvider = new ethers.providers.Web3Provider(window.ethereum);
         setProvider(tempProvider);
         let tempSigner = tempProvider.getSigner();
         setSigner(tempSigner);
+        parentCallback(addr, tempSigner);
     }
 
     return (

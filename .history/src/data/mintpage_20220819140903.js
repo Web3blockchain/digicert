@@ -101,7 +101,6 @@ export const undergratesProjectYear = ['111','112'];
 
 const undergratesProject = {
     '111': {
-        socialIcons: [
             {
                 type: 'CAECE',
                 title:  'CAECE',
