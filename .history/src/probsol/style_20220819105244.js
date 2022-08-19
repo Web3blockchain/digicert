@@ -59,14 +59,11 @@ export const Choice = styled.button`
     transition: .3s;
     background-color: #4F9994;
     color: #FFFFFF;
-    font-family: NotoSansTC;
-    font-size: 14px;
-    // > p {
-    //     color: #FFFFFF;
-    //     font-color: #FFFFFF;
-    //     font-family: NotoSansTC;
-    //     font-size: 40px;
-    // }
+    > p {
+        color: #FFFFFF;
+        font-family: NotoSansTC;
+        font-size: 30px;
+    }
     &:hover {
         background-color: #4F9994;
         border: 2px solid #4F9994;
@@ -89,7 +86,7 @@ export const OptionWrapper = styled.div`
 export const OptionSelect = styled.select`
     width: 90%;
     height: 60%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;

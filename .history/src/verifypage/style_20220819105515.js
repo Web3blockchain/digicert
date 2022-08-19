@@ -59,7 +59,7 @@ export const SearchBox = styled.div`
 export const TextArea = styled.textarea`
     width: 93%;
     height: 100%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     border-left: 0px;
     border-top: 0px;
     border-bottom: 0px;

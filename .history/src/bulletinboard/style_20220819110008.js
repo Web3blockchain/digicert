@@ -195,7 +195,9 @@ export const PrevButton = styled.button`
     height: 80%;
     box-sizing: border-box;
     border-radius: 10px;
+    
     background-color: #F1F1E2;
+    border: 1px solid #F1F1E2;
     //box-shadow: .8px .8px .2px px #000000;
     transition: .3s;
     font-family: Bebas;

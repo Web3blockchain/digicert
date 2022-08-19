@@ -22,7 +22,6 @@ export const Wrapper = styled.div`
     justify-content: center;
     box-sizing: border-box;
     border-bottom: 1.5px solid black;
-    border-color: #F1F1F2;
 `
 
 export const ContentWrapper = styled.div`

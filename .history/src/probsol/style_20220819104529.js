@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     width: 100%;
     height: 720px;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const AboutWrapper = styled.div`
     width: 70%;
     height: 80%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
 `
 
 export const HeaderContent = styled.div`
@@ -58,15 +58,12 @@ export const Choice = styled.button`
     align-items: center;
     transition: .3s;
     background-color: #4F9994;
-    color: #FFFFFF;
-    font-family: NotoSansTC;
-    font-size: 14px;
-    // > p {
-    //     color: #FFFFFF;
-    //     font-color: #FFFFFF;
-    //     font-family: NotoSansTC;
-    //     font-size: 40px;
-    // }
+    > p {
+        color: #FFFFFF;
+        font-color: #4F9994;
+        font-family: NotoSansTC;
+        font-size: 30px;
+    }
     &:hover {
         background-color: #4F9994;
         border: 2px solid #4F9994;
@@ -87,31 +84,29 @@ export const OptionWrapper = styled.div`
     box-sizing: border-box;
 `
 export const OptionSelect = styled.select`
-    width: 90%;
+    width: 80%;
     height: 60%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     font-size: 15px;
-    color: #304C4D;
+    color: black;
     font-family: NotoSansTC;
-    border: 0.5px solid #304C4D;
+    border: 1px solid #304C4D;
     > option.visible {
         background-color: #F1F1F2;
-        font-color: #4F9994;
         font-size: 15px;
         font-family: NotoSansTC;
     }
 `
 export const Outcome = styled.div`
-    width: 90%;
+    width: 100%;
     height: 50%;
-    margin: auto;
     background-color: #FFFFFF;
     box-sizing: border-box;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
     word-wrap: break-word;
     font-size: 30px;
     overflow: auto;

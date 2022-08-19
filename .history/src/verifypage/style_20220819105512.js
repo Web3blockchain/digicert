@@ -59,7 +59,7 @@ export const SearchBox = styled.div`
 export const TextArea = styled.textarea`
     width: 93%;
     height: 100%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     border-left: 0px;
     border-top: 0px;
     border-bottom: 0px;
@@ -99,10 +99,10 @@ export const ModalCard = Modal.styled`
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     border: 2px solid black;
-    border-color: #F1F1E2;
+    border-color: #F1F1F2;
     // border-radius: 20px;
     width: 60%;
     height: 80%;

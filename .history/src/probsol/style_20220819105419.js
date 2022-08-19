@@ -89,7 +89,7 @@ export const OptionWrapper = styled.div`
 export const OptionSelect = styled.select`
     width: 90%;
     height: 60%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     box-sizing: border-box;
     border-radius: 10px;
     text-align: center;

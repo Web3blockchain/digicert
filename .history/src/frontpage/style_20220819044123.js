@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border-bottom: 1.5px solid black;
-    border-color: #F1F1F2;
+    border-bottom: 3px solid black;
+    border-color: #FFFFFF;
 `
 
 export const ContentWrapper = styled.div`

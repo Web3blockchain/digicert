@@ -166,7 +166,7 @@ export const NextButton = styled.button`
     width: 20%;
     height: 80%;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid black;
     background-color: #F1F1E2;
     //box-shadow: 1px 1px .3px .3px #000000;
@@ -194,7 +194,7 @@ export const PrevButton = styled.button`
     width: 20%;
     height: 80%;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #F1F1E2;
     //box-shadow: .8px .8px .2px px #000000;
     transition: .3s;

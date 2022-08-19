@@ -73,7 +73,7 @@ export const RecentAnounce = styled.div`
         font-family: NotoSansTC;
     }
     &.odd {
-        background-color: #F1F1E2;
+        background-color: #F1F1F2;
     }
     &.even {
         background-color: #FFFFFF;
@@ -89,7 +89,7 @@ export const RecentAnnounceDate = styled.div`
     align-items: center;
     letter-spacing: 2px;
     > p.odd {
-        background-color: #F1F1E2;
+        background-color: #F1F1F2;
         text-align: center;
         font-size: 26px;
         font-weight: 500;
@@ -155,7 +155,7 @@ export const NewContent = styled.div`
 
 export const ButtonWrapper = styled.div`
     width: 100%;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     height: 10%;
     display: flex;
     justify-content: space-around;
@@ -166,9 +166,9 @@ export const NextButton = styled.button`
     width: 20%;
     height: 80%;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid black;
-    background-color: #F1F1E2;
+    background-color: #F1F1F2;
     //box-shadow: 1px 1px .3px .3px #000000;
     transition: .3s;
     font-family: Bebas;
@@ -194,8 +194,8 @@ export const PrevButton = styled.button`
     width: 20%;
     height: 80%;
     box-sizing: border-box;
-    border-radius: 10px;
-    background-color: #F1F1E2;
+    border-radius: 20px;
+    background-color: #F1F1F2;
     //box-shadow: .8px .8px .2px px #000000;
     transition: .3s;
     font-family: Bebas;

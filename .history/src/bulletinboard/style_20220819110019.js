@@ -167,7 +167,7 @@ export const NextButton = styled.button`
     height: 80%;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #FFFFFF;
     background-color: #F1F1E2;
     //box-shadow: 1px 1px .3px .3px #000000;
     transition: .3s;
