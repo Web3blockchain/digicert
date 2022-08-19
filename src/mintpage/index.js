@@ -92,9 +92,17 @@ const MintPage = ({accountAddr, tempSigner}) => {
     const handleMintButtonClick = () => {
         let contract = new ethers.Contract(contractAddr, contractABI, tempSigner);
         if(window.ethereum && window.ethereum.isMetaMask){
-            contract.mintCAEMeta();
-            console.log('success');
-            alert('Please wait for a minute, and you can check your NFT on opensea');
+            contract.mintCAEMeta()
+                .then((_)=>{
+                    alert('Please wait for a minute, and you can check your NFT on opensea');
+                    console.log('success');
+                })
+                .catch((res)=>{
+                    alert('Something wrong happened, please try again later');
+                    console.log('fail');
+                    console.log(res);
+                })
+            console.log('mint completed');
         }
         else{
             alert('fail');
