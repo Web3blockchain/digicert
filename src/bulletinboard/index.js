@@ -73,7 +73,7 @@ const BulletionBoard = () => {
                     <RecentAnnounceWrapper>
                         <RecentAnnounceTitle>
                             <div className="icon" />
-                            <p>最新公告 / News</p>
+                            <p>最新告 / News</p>
                         </RecentAnnounceTitle>
                             {getAnnounceContent(annouceContent)}
                         <ButtonWrapper>
